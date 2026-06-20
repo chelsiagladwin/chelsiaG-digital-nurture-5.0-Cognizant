@@ -1,0 +1,17 @@
+Task 2: Verify Normalisation
+Goal: Confirm the schema satisfies 1NF, 2NF, and 3NF — and document why.
+Steps:
+6.
+For 1NF: Confirm every column holds atomic values. Identify any hypothetical violation if, for example, we had stored multiple phone numbers in one field.
+7.
+For 2NF: Confirm every non-key column is fully dependent on the entire primary key (especially check the enrollments table, which has a composite candidate key of student_id + course_id).
+8.
+For 3NF: Confirm there are no transitive dependencies. (Hint: would storing dept_name in the students table violate 3NF?)
+9.
+Write a short comment using SQL -- comments inside your .sql file documenting your 3NF analysis for the enrollments table.
+Hint:
+•
+A transitive dependency exists when column C depends on column B, which depends on the primary key A, rather than directly on A.
+Page | For Digital Nurture 5.0 Participants Only
+Digital Nurture 5.0 | Module 3: Database Integration | Hands-On Exercise Book
+Expected Outcome:
